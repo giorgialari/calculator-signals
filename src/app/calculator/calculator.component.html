@@ -1,0 +1,28 @@
+<div class="calculator">
+  <div class="display">
+    <input type="text" id="display" disabled [value]="display()" />
+  </div>
+  <div class="buttons">
+    <button class="btn" (click)="btnClick(7)">7</button>
+    <button class="btn" (click)="btnClick(8)">8</button>
+    <button class="btn" (click)="btnClick(9)">9</button>
+    <button class="btn operator" (click)="btnClick('/')">/</button>
+
+    <button class="btn" (click)="btnClick(4)">4</button>
+    <button class="btn" (click)="btnClick(5)">5</button>
+    <button class="btn" (click)="btnClick(6)">6</button>
+    <button class="btn operator" (click)="btnClick('*')">*</button>
+
+    <button class="btn" (click)="btnClick(1)">1</button>
+    <button class="btn" (click)="btnClick(2)">2</button>
+    <button class="btn" (click)="btnClick(3)">3</button>
+    <button class="btn operator" (click)="btnClick('-')">-</button>
+
+    <button class="btn" (click)="btnClick(0)">0</button>
+    <button class="btn" (click)="btnClick('.')">.</button>
+    <button class="btn" (click)="btnClick('C')">C</button>
+    <button class="btn operator" (click)="btnClick('+')">+</button>
+
+    <button class="btn equal" (click)="calculate()">=</button>
+  </div>
+</div>
